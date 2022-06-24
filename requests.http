@@ -1,0 +1,30 @@
+### Sign up 
+POST http://localhost:3333/auth/signup
+Content-Type: application/json
+
+{
+    "email": "admin2@gmail.com",
+    "password": "admin"
+}
+
+
+### Sign in
+POST http://localhost:3333/auth/signin
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin"
+}
+
+
+### Logout
+POST http://localhost:3333/auth/logout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIwLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTY0OTQwMzk5MCwiZXhwIjoxNjQ5NDA0ODkwfQ.UmT86Aiq42aL6EmWGzHk9F1aAIg0LbLOlKr_tEHIWhY
+
+
+### refresh Token
+POST http://localhost:3333/auth/refresh
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIwLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTY0OTQwNDAwNCwiZXhwIjoxNjUwMDA4ODA0fQ.oR7_fFASMtPwjmsBFtuZUlhjAvs0Ksavn6HplLGZUKk
